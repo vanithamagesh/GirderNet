@@ -1,0 +1,112 @@
+{
+ "images": {
+  "deepcrack": 237,
+  "s2ds": 93
+ },
+ "resamples": 2000,
+ "seed": 0,
+ "A": "B3-ovl-L0.1-s0",
+ "B": "B3-L-s0",
+ "tests": {
+  "DeepCrack crack IoU, chosen input sizes (1024 vs 768)": {
+   "A": 0.2484,
+   "B": 0.2182,
+   "diff": 0.0302,
+   "ci95": [
+    0.0184,
+    0.0444
+   ],
+   "share_A_le_B": 0.0
+  },
+  "DeepCrack crack F1, chosen input sizes (1024 vs 768)": {
+   "A": 0.3979,
+   "B": 0.3582,
+   "diff": 0.0397,
+   "ci95": [
+    0.0243,
+    0.0567
+   ],
+   "share_A_le_B": 0.0
+  },
+  "DeepCrack crack precision, chosen input sizes (1024 vs 768)": {
+   "A": 0.2717,
+   "B": 0.234,
+   "diff": 0.0377,
+   "ci95": [
+    0.0247,
+    0.0561
+   ],
+   "share_A_le_B": 0.0
+  },
+  "DeepCrack crack recall, chosen input sizes (1024 vs 768)": {
+   "A": 0.7427,
+   "B": 0.7632,
+   "diff": -0.0205,
+   "ci95": [
+    -0.0368,
+    -0.0056
+   ],
+   "share_A_le_B": 0.999
+  },
+  "DeepCrack crack IoU, both at 1024": {
+   "A": 0.2484,
+   "B": 0.2393,
+   "diff": 0.0091,
+   "ci95": [
+    0.0014,
+    0.0177
+   ],
+   "share_A_le_B": 0.013
+  },
+  "S2DS mean IoU of spalling, corrosion, efflorescence (1024)": {
+   "A": 0.6909,
+   "B": 0.6858,
+   "diff": 0.005,
+   "ci95": [
+    -0.0119,
+    0.0172
+   ],
+   "share_A_le_B": 0.251
+  },
+  "S2DS IoU spalling (1024)": {
+   "A": 0.7873,
+   "B": 0.7944,
+   "diff": -0.0071,
+   "ci95": [
+    -0.0218,
+    0.0066
+   ],
+   "share_A_le_B": 0.856
+  },
+  "S2DS IoU corrosion (1024)": {
+   "A": 0.5987,
+   "B": 0.5833,
+   "diff": 0.0155,
+   "ci95": [
+    0.0044,
+    0.027
+   ],
+   "share_A_le_B": 0.004
+  },
+  "S2DS IoU efflorescence (1024)": {
+   "A": 0.6865,
+   "B": 0.6798,
+   "diff": 0.0067,
+   "ci95": [
+    -0.0373,
+    0.0343
+   ],
+   "share_A_le_B": 0.352
+  },
+  "S2DS IoU crack (1024, plain pixels)": {
+   "A": 0.108,
+   "B": 0.1009,
+   "diff": 0.0072,
+   "ci95": [
+    -0.003,
+    0.016
+   ],
+   "share_A_le_B": 0.086
+  }
+ }
+}

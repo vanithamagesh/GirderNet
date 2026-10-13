@@ -1,0 +1,32 @@
+Paper C, run B3-lrd-L0.1-s0 (label-relation decoder, paperc_v1_9.py, S1 v1.9), A100-SXM4-40GB, 12 Oct 2026. Output pasted by the author.
+Config: DINOv3 ViT-L/16 + UPerNet + label-relation decoder (19 class queries, 3 layers, class-to-class attention biased by
+the directed overlap prior of the fit part), overlap weight 0.1, containment term, aux weight 0.4, 20 epochs, seed 0.
+Prior (largest): ExposedRebars->Rust 0.95, ExposedRebars->Spalling 0.80, Wetspot->Weathering 0.51, ACrack->Weathering 0.34,
+JTape->Weathering 0.30, Drainage->Rust 0.28. About 11-12 min per epoch.
+Hold-out mIoU at long side 1024 (T in brackets) per epoch:
+ 1 0.2739 (0.2463) | 2 0.3698 (0.2974) | 3 0.4089 (0.3329) | 4 0.4246 (0.3398) | 5 0.4352 (0.3417) | 6 0.4389 (0.3415)
+ 7 0.4564 (0.3561) | 8 0.4544 (0.3653) | 9 0.4720 (0.4020) | 10 0.4774 (0.3864) | 11 0.4734 (0.3839) | 12 0.4815 (0.4169)
+13 0.4796 (0.4069) | 14 0.4845 (0.3967) | 15 0.4876 (0.3963) | 16 0.4932 (0.4154) | 17 0.4829 (0.3916) | 18 0.4990 (0.4232)
+19 0.4992 (0.4197) | 20 0.5001 (0.4224)
+best epoch 20; holdout native 0.5213 (T 0.3927); validation (best epoch, no TTA) native 0.4884 (T 0.3763), 512 0.4865, toolkit 0.4830
+Final step: weights last3 (hold-out 0.5011; best 0.5001, last5 0.5003, last8 0.4983); hold-out with TTA 0.5020; per-class
+thresholds not reported (2-fold gain -0.0088).
+FINAL validation (last3, TTA, 0.5): mIoU native 0.4901 (T 0.3803) | 512 0.4895 (T 0.3888) | toolkit 0.4860 | clDice 0.6225
+
+paperc_bootstrap_v1_0.py, A = B3-lrd-L0.1-s0, B = B3-ovl-L0.1-s0 (ours), final results, 975 images, 2000 resamples (seed 0):
+metric                                   A       B     A - B    95% interval
+mIoU native                          0.4901  0.5004  -0.0104  [-0.0221, +0.0032]
+T mIoU native                        0.3803  0.4033  -0.0231  [-0.0482, +0.0005]
+mIoU 512x512                         0.4895  0.4933  -0.0037  [-0.0117, +0.0046]
+mIoU toolkit                         0.4860  0.4894  -0.0034  [-0.0113, +0.0048]
+clDice Crack                         0.6225  0.6248  -0.0023  [-0.0159, +0.0097]
+exact label-set match                0.3972  0.4040  -0.0069  [-0.0377, +0.0214]
+pair IoU ExposedRebars&Rust          0.4332  0.4479  -0.0148  [-0.0410, +0.0063]
+pair IoU ExposedRebars&Spalling      0.4557  0.4376  +0.0181  [-0.0176, +0.0604]
+pair IoU Spalling&Rust               0.5112  0.5036  +0.0077  [-0.0152, +0.0356]
+instance recall Cavity               0.3958  0.4731  -0.0773  [-0.1090, -0.0441]  below 0
+instance recall Rust                 0.6144  0.6155  -0.0011  [-0.0158, +0.0136]
+instance recall ExposedRebars        0.7733  0.7733  +0.0000  [-0.0431, +0.0379]
+per class native: only PEquipment above 0 (+0.0351 [+0.0036, +0.0787]); Cavity -0.0698 [-0.1563, +0.0137].
+Pre-registered H4 (lrd_plan): supported if the interval of the validation mIoU difference lies above 0 -> NOT supported.
+H5 (no-prior ablation): run only if H4 is supported or the means are within 0.005 -> not run (|difference| 0.0104).

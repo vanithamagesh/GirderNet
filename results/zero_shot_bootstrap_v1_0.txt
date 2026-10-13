@@ -1,0 +1,11 @@
+ours (B3-ovl-L0.1-s0) minus baseline (B3-L-s0), paired bootstrap over test images, 2,000 resamples, seed 0
+DeepCrack crack IoU, chosen input sizes (1024 vs 768)                    0.2484 0.2182 +0.0302 [+0.0184, +0.0444] share A<=B 0.0 above 0
+DeepCrack crack F1, chosen input sizes (1024 vs 768)                     0.3979 0.3582 +0.0397 [+0.0243, +0.0567] share A<=B 0.0 above 0
+DeepCrack crack precision, chosen input sizes (1024 vs 768)              0.2717 0.2340 +0.0377 [+0.0247, +0.0561] share A<=B 0.0 above 0
+DeepCrack crack recall, chosen input sizes (1024 vs 768)                 0.7427 0.7632 -0.0205 [-0.0368, -0.0056] share A<=B 0.999 below 0
+DeepCrack crack IoU, both at 1024                                        0.2484 0.2393 +0.0091 [+0.0014, +0.0177] share A<=B 0.013 above 0
+S2DS mean IoU of spalling, corrosion, efflorescence (1024)               0.6909 0.6858 +0.0050 [-0.0119, +0.0172] share A<=B 0.251
+S2DS IoU spalling (1024)                                                 0.7873 0.7944 -0.0071 [-0.0218, +0.0066] share A<=B 0.856
+S2DS IoU corrosion (1024)                                                0.5987 0.5833 +0.0155 [+0.0044, +0.0270] share A<=B 0.004 above 0
+S2DS IoU efflorescence (1024)                                            0.6865 0.6798 +0.0067 [-0.0373, +0.0343] share A<=B 0.352
+S2DS IoU crack (1024, plain pixels)                                      0.1080 0.1009 +0.0072 [-0.0030, +0.0160] share A<=B 0.086

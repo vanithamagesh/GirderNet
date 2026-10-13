@@ -1,0 +1,77 @@
+run,TTA,class,IoU_full,IoU_512,IoU_toolkit
+B1-s0,no TTA,Crack,0.2836,0.2562,0.2632
+B1-s0,no TTA,ACrack,0.4605,0.4582,0.4608
+B1-s0,no TTA,Wetspot,0.2437,0.224,0.2247
+B1-s0,no TTA,Efflorescence,0.3679,0.3319,0.3324
+B1-s0,no TTA,Rust,0.481,0.4201,0.4194
+B1-s0,no TTA,Rockpocket,0.1005,0.1325,0.1323
+B1-s0,no TTA,Hollowareas,0.618,0.5526,0.5527
+B1-s0,no TTA,Cavity,0.2007,0.2136,0.2161
+B1-s0,no TTA,Spalling,0.4952,0.4074,0.3972
+B1-s0,no TTA,Graffiti,0.5154,0.5994,0.6013
+B1-s0,no TTA,Weathering,0.3557,0.3986,0.3995
+B1-s0,no TTA,Restformwork,0.3204,0.3441,0.3428
+B1-s0,no TTA,ExposedRebars,0.3624,0.4353,0.4433
+B1-s0,no TTA,Bearing,0.7502,0.6626,0.6617
+B1-s0,no TTA,EJoint,0.4432,0.4799,0.4819
+B1-s0,no TTA,Drainage,0.5292,0.5313,0.5265
+B1-s0,no TTA,PEquipment,0.6816,0.6893,0.6904
+B1-s0,no TTA,JTape,0.3152,0.3752,0.3721
+B1-s0,no TTA,WConccor,0.1903,0.0891,0.0904
+B3-L-s0,TTA,Crack,0.3637,0.3467,0.346
+B3-L-s0,TTA,ACrack,0.557,0.5258,0.5291
+B3-L-s0,TTA,Wetspot,0.3465,0.3402,0.3403
+B3-L-s0,TTA,Efflorescence,0.5301,0.4273,0.4217
+B3-L-s0,TTA,Rust,0.589,0.5299,0.5237
+B3-L-s0,TTA,Rockpocket,0.1789,0.1905,0.1868
+B3-L-s0,TTA,Hollowareas,0.6874,0.6442,0.6415
+B3-L-s0,TTA,Cavity,0.2059,0.2292,0.2318
+B3-L-s0,TTA,Spalling,0.5985,0.4875,0.473
+B3-L-s0,TTA,Graffiti,0.5563,0.6611,0.6639
+B3-L-s0,TTA,Weathering,0.383,0.4429,0.4429
+B3-L-s0,TTA,Restformwork,0.3985,0.4558,0.4511
+B3-L-s0,TTA,ExposedRebars,0.4328,0.5269,0.5007
+B3-L-s0,TTA,Bearing,0.7764,0.7603,0.7571
+B3-L-s0,TTA,EJoint,0.6753,0.6994,0.6972
+B3-L-s0,TTA,Drainage,0.7355,0.7521,0.7431
+B3-L-s0,TTA,PEquipment,0.8035,0.7905,0.7887
+B3-L-s0,TTA,JTape,0.4273,0.482,0.4726
+B3-L-s0,TTA,WConccor,0.194,0.1217,0.1202
+B3-ovl-L0.1-s0,TTA,Crack,0.3648,0.3507,0.3482
+B3-ovl-L0.1-s0,TTA,ACrack,0.5818,0.5331,0.5348
+B3-ovl-L0.1-s0,TTA,Wetspot,0.3737,0.3455,0.3445
+B3-ovl-L0.1-s0,TTA,Efflorescence,0.5479,0.4352,0.4301
+B3-ovl-L0.1-s0,TTA,Rust,0.5844,0.521,0.5133
+B3-ovl-L0.1-s0,TTA,Rockpocket,0.1655,0.1818,0.1789
+B3-ovl-L0.1-s0,TTA,Hollowareas,0.6922,0.6505,0.6497
+B3-ovl-L0.1-s0,TTA,Cavity,0.2124,0.2304,0.2337
+B3-ovl-L0.1-s0,TTA,Spalling,0.6085,0.4933,0.4824
+B3-ovl-L0.1-s0,TTA,Graffiti,0.5526,0.6586,0.6621
+B3-ovl-L0.1-s0,TTA,Weathering,0.4053,0.4438,0.4438
+B3-ovl-L0.1-s0,TTA,Restformwork,0.3709,0.4393,0.439
+B3-ovl-L0.1-s0,TTA,ExposedRebars,0.4518,0.5313,0.5023
+B3-ovl-L0.1-s0,TTA,Bearing,0.7733,0.7461,0.7437
+B3-ovl-L0.1-s0,TTA,EJoint,0.6837,0.696,0.6946
+B3-ovl-L0.1-s0,TTA,Drainage,0.7273,0.7497,0.7431
+B3-ovl-L0.1-s0,TTA,PEquipment,0.7995,0.7776,0.7773
+B3-ovl-L0.1-s0,TTA,JTape,0.4266,0.4752,0.4633
+B3-ovl-L0.1-s0,TTA,WConccor,0.186,0.1133,0.1132
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Crack,0.3629,0.3446,0.3557
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,ACrack,0.5621,0.5236,0.5257
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Wetspot,0.3687,0.3383,0.3381
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Efflorescence,0.5476,0.4326,0.4277
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Rust,0.5764,0.5245,0.5336
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Rockpocket,0.1636,0.1817,0.1805
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Hollowareas,0.6981,0.6498,0.6492
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Cavity,0.1805,0.201,0.21
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Spalling,0.6073,0.4902,0.4802
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Graffiti,0.5499,0.656,0.6592
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Weathering,0.4033,0.4381,0.4384
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Restformwork,0.365,0.4373,0.4389
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,ExposedRebars,0.4358,0.5244,0.5171
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Bearing,0.783,0.751,0.7489
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,EJoint,0.6784,0.6886,0.6873
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,Drainage,0.707,0.7291,0.7234
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,PEquipment,0.7907,0.7648,0.7646
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,JTape,0.4161,0.466,0.4553
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,WConccor,0.1887,0.1144,0.1145

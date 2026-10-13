@@ -1,0 +1,5 @@
+run,TTA,mIoU_full,T_mIoU_full,rare_mIoU_full,mIoU_512,mIoU_toolkit,clDice_crack,exact_label_set_match
+B1-s0,no TTA,0.406,0.332,0.3775,0.4001,0.4005,0.4869,0.3115
+B3-L-s0,TTA,0.4968,0.3978,0.4633,0.4955,0.4911,0.625,0.3712
+B3-ovl-L0.1-s0,TTA,0.5004,0.4033,0.4602,0.4933,0.4894,0.6248,0.404
+Full-on-B3-ovl-L0.1-s0-skelT-s0,no TTA,0.494,0.3889,0.4568,0.4872,0.4868,0.6245,0.4208
